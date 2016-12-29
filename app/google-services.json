@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "287724043060",
+    "firebase_url": "https://remind-me-where.firebaseio.com",
+    "project_id": "remind-me-where",
+    "storage_bucket": "remind-me-where.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:287724043060:android:9ac810ce3f4d5317",
+        "android_client_info": {
+          "package_name": "com.foolishserveer.remindmewhere"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "287724043060-1ajv2mpc0fdujug3roqut7fd6jip9d0e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDE_otPDQFjokptptK-V9FM6qrk1Ih06t4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:287724043060:android:052ac5c794891cf5",
+        "android_client_info": {
+          "package_name": "com.foolishserver.remindmewhere"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "287724043060-1ajv2mpc0fdujug3roqut7fd6jip9d0e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDE_otPDQFjokptptK-V9FM6qrk1Ih06t4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
