@@ -6,6 +6,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import java.util.Random;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     double latitude;
     private TextView tlat;
     private TextView tlong;
+    private DatabaseReference mDatabase;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         b_get = (Button)findViewById(R.id.get);
         tlat = (TextView)findViewById(R.id.show_latitude);
         tlong = (TextView)findViewById(R.id.show_longitude);
+        mDatabase = FirebaseDatabase.getInstance().getReference();
 
 
 
@@ -41,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
                     String longstring = Double.toString(longitude);
                     String latstring = Double.toString(latitude);
 
+
                     tlat.setText(latstring);
                     tlong.setText(longstring);
 
@@ -51,6 +59,10 @@ public class MainActivity extends AppCompatActivity {
                     tlong.setText("Sorry no longitude");
                 }
 
+
+                mDatabase.child("z-android").child("Longitude").setValue(longitude);
+                mDatabase.child("z-android").child("Latitude").setValue(latitude);
+                mDatabase.child("z-android").child("Time").setValue(System.currentTimeMillis());
             }
         });
     }
@@ -65,5 +77,6 @@ public class MainActivity extends AppCompatActivity {
         super.onConfigurationChanged(newConfig);
         setContentView(R.layout.activity_main);
     }
+
 
 }

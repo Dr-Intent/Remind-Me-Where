@@ -10,40 +10,39 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:gravity="center"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.foolishserver.remindmewhere.MainActivity"
     tools:showIn="@layout/activity_main">
-
-    <Button
-        android:id="@+id/get"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Get Location" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        android:text="Longitude" />
-
+        android:text="Longitude"
+        android:textSize="21sp"/>
     <TextView
         android:id="@+id/show_longitude"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:freezesText="true"/>
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Latitude"
         android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp" />
-
+        android:layout_marginBottom="16dp"
+        android:textSize="21sp"/>
     <TextView
         android:id="@+id/show_latitude"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:freezesText="true"/>
+    <Button
+        android:id="@+id/get"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Location" />
 
 
 </LinearLayout>
